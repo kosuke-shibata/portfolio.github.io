@@ -1,0 +1,215 @@
+@import "mixin";
+
+body {
+  margin: 0;
+  background: #D2EBED;
+  color: #57595B;
+}
+#container {
+  width: 900px;
+  margin: 0 auto;
+}
+header {
+  h1 {
+    margin: 0;
+    img {
+      width: 500px;
+      float: left;
+    }
+  }
+  .menu-button {
+    display: none;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    margin: 0 auto 30px;
+
+    li {
+      width: 150px;
+      border-right: 1px solid;
+
+      &:nth-child(3) {
+        border-right: none;
+      }
+
+      a {
+        color: #57595B;
+        text-decoration: none;
+
+        &:hover {
+          border-bottom: 1px solid #57595B;
+          padding-bottom: 3px;
+        }
+      }
+    }
+  }
+}
+
+main {
+  .main-photo {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+  
+  h2 {
+    font-family: 'Arima Madurai', cursive;
+    font-weight: 200; 
+    letter-spacing: 3px;
+    font-size: 50px;
+    margin: 100px auto 70px;
+    border-bottom: 2px solid;
+    line-height: 50px;
+  }
+
+  #about { 
+    &.fade-in {
+      @include animation(
+        $name: sample02,
+      );
+      .self-intro {
+        img {
+          float: left;
+        }
+        dl {
+          font-size: 20px;
+          letter-spacing: 3px;
+          line-height: 60px;
+          dt {
+            float: left;
+            margin-left: 40px;
+            color: #000;
+          }
+          dd {
+            margin-left: 450px;
+          }
+        }
+      }
+      .career {
+        clear: left;
+        margin: 40px auto 100px;
+        line-height: 30px;
+      }
+      
+    }
+  }
+
+  #works {
+    .works-service {
+      &.fade-in {
+        @include animation(
+          $name: sample02,
+        );
+      }
+    }
+      .works-list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-bottom: 100px;
+        li {
+          opacity: 0;
+          &.fade-in-line {
+            &.works-list-1 {
+              @include animation(
+              $name: sample01,
+              );
+            }
+            &.works-list-2 {
+              @include animation(
+              $name: sample01,
+              $delay: 0.5s,
+              );
+            }
+            &.works-list-3 {
+              @include animation(
+              $name: sample01,
+              $delay: 1s,
+              );
+            }
+          }
+          width: 30%;
+          height: auto;
+          list-style: none;
+          img {
+            width: 100%;
+          }
+          p {
+            margin: 0;
+            padding-top: 10px;
+            line-height: 30px;
+          }
+        }
+      }
+  }
+}
+
+footer {
+  text-align: right;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    margin: 0 auto 30px;
+    padding: 0;
+
+    li {
+      width: 150px;
+      border-right: 1px solid;
+
+      &:nth-child(3) {
+        border-right: none;
+      }
+
+      a {
+        color: #57595B;
+        text-decoration: none;
+
+        &:hover {
+          border-bottom: 1px solid #57595B;
+          padding-bottom: 3px;
+        }
+      }
+    }
+  }
+}
+@keyframes sample01 {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 0.3;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes sample02 {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@media  (max-width: 600px) {
+  @import "breakpoints/600max";
+}
+@media  (max-width: 800px) {
+  @import "breakpoints/800max";
+}
+@media  (max-width: 900px) {
+  @import "breakpoints/900max";
+}
