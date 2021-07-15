@@ -1,0 +1,599 @@
+body {
+  margin: 0;
+  background: #D2EBED;
+  color: #57595B;
+}
+
+#container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h1 img {
+  width: 500px;
+  float: left;
+}
+
+header .menu-button {
+  display: none;
+}
+
+header ul {
+  float: right;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+
+header ul li {
+  width: 150px;
+  border-right: 1px solid;
+}
+
+header ul li:nth-child(3) {
+  border-right: none;
+}
+
+header ul li a {
+  color: #57595B;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  border-bottom: 1px solid #57595B;
+  padding-bottom: 3px;
+}
+
+main .main-photo {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+main h2 {
+  font-family: 'Arima Madurai', cursive;
+  font-weight: 200;
+  letter-spacing: 3px;
+  font-size: 50px;
+  margin: 100px auto 70px;
+  border-bottom: 2px solid;
+  line-height: 50px;
+}
+
+main #about.fade-in {
+  -webkit-animation-name: sample02;
+          animation-name: sample02;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+main #about.fade-in .self-intro img {
+  float: left;
+}
+
+main #about.fade-in .self-intro dl {
+  font-size: 20px;
+  letter-spacing: 3px;
+  line-height: 60px;
+}
+
+main #about.fade-in .self-intro dl dt {
+  float: left;
+  margin-left: 40px;
+  color: #000;
+}
+
+main #about.fade-in .self-intro dl dd {
+  margin-left: 450px;
+}
+
+main #about.fade-in .career {
+  clear: left;
+  margin: 40px auto 100px;
+  line-height: 30px;
+}
+
+main #works .works-service.fade-in {
+  -webkit-animation-name: sample02;
+          animation-name: sample02;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+main #works .works-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 100px;
+}
+
+main #works .works-list li {
+  opacity: 0;
+  width: 30%;
+  height: auto;
+  list-style: none;
+}
+
+main #works .works-list li.fade-in-line.works-list-1 {
+  -webkit-animation-name: sample01;
+          animation-name: sample01;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+main #works .works-list li.fade-in-line.works-list-2 {
+  -webkit-animation-name: sample01;
+          animation-name: sample01;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+main #works .works-list li.fade-in-line.works-list-3 {
+  -webkit-animation-name: sample01;
+          animation-name: sample01;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+main #works .works-list li img {
+  width: 100%;
+}
+
+main #works .works-list li p {
+  margin: 0;
+  padding-top: 10px;
+  line-height: 30px;
+}
+
+footer {
+  text-align: right;
+}
+
+footer ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: center;
+  margin: 0 auto 30px;
+  padding: 0;
+}
+
+footer ul li {
+  width: 150px;
+  border-right: 1px solid;
+}
+
+footer ul li:nth-child(3) {
+  border-right: none;
+}
+
+footer ul li a {
+  color: #57595B;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  border-bottom: 1px solid #57595B;
+  padding-bottom: 3px;
+}
+
+@-webkit-keyframes sample01 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  50% {
+    opacity: 0.3;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes sample01 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  50% {
+    opacity: 0.3;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes sample02 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes sample02 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@media (max-width: 600px) {
+  #container {
+    width: 100%;
+  }
+  header h1 img {
+    width: 82%;
+  }
+  header .menu-command {
+    overflow: hidden;
+    float: right;
+  }
+  header .menu-command .menu-button {
+    display: block;
+    margin: 10px auto 15px;
+    overflow: hidden;
+    width: 50px;
+    outline: none !important;
+    background: unset;
+    border: none;
+    cursor: pointer;
+  }
+  header .menu-command .menu-button > span {
+    background: black;
+    width: 35px;
+    height: 2px;
+    display: block;
+    margin-bottom: 9px;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+  }
+  header .menu-command .menu-button > span:last-child {
+    margin-bottom: 0;
+  }
+  header .menu-command .menu {
+    -webkit-animation-name: sample04;
+            animation-name: sample04;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    left: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+  header .menu-command .menu li {
+    border-bottom: 1px solid;
+    border-right: none;
+    width: 50px;
+    line-height: 40px;
+  }
+  header .menu-command .menu li a {
+    font-size: 12px;
+  }
+  header .menu-command .menu li a:hover {
+    border-bottom: none;
+  }
+  header .menu-command.menu-open .menu-button > span:nth-child(1) {
+    -webkit-transform: translateY(11px) rotate(135deg);
+            transform: translateY(11px) rotate(135deg);
+  }
+  header .menu-command.menu-open .menu-button > span:nth-child(2) {
+    -webkit-transform: translateX(-18px) scale(0);
+            transform: translateX(-18px) scale(0);
+  }
+  header .menu-command.menu-open .menu-button > span:nth-child(3) {
+    -webkit-transform: translateY(-11px) rotate(-135deg);
+            transform: translateY(-11px) rotate(-135deg);
+  }
+  header .menu-command.menu-open .menu {
+    -webkit-animation-name: sample03;
+            animation-name: sample03;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    display: block !important;
+  }
+  main {
+    clear: both;
+  }
+  main img {
+    margin-top: 60px;
+  }
+  main #about.fade-in .self-intro img {
+    width: 160px;
+    height: auto;
+    margin: 0 50%;
+    -webkit-transform: translate(-50%, -20%);
+            transform: translate(-50%, -20%);
+  }
+  main #about.fade-in .self-intro dl {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 40px;
+  }
+  main #about.fade-in .self-intro dl dt {
+    float: left;
+    margin-left: 20px;
+  }
+  main #about.fade-in .self-intro dl dd {
+    margin-left: 200px;
+    display: block;
+  }
+  main #about.fade-in .career {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  main #about.fade-in .career p {
+    margin: 0;
+    line-height: 35px;
+  }
+  main #works .works-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #works .works-list li {
+    margin: 0 auto 100px;
+    width: 80%;
+  }
+  main #works .works-list li.fade-in-line.works-list-1 {
+    -webkit-animation-name: sample01;
+            animation-name: sample01;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  main #works .works-list li.fade-in-line.works-list-2 {
+    -webkit-animation-name: sample01;
+            animation-name: sample01;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  main #works .works-list li.fade-in-line.works-list-3 {
+    -webkit-animation-name: sample01;
+            animation-name: sample01;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes sample03 {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+    50% {
+      opacity: 0.3;
+      -webkit-transform: translateX(80px);
+              transform: translateX(80px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes sample03 {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+    50% {
+      opacity: 0.3;
+      -webkit-transform: translateX(80px);
+              transform: translateX(80px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @-webkit-keyframes sample04 {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      opacity: 1;
+    }
+    50% {
+      -webkit-transform: translateX(20px);
+              transform: translateX(20px);
+      opacity: 0.3;
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+      opacity: 0;
+    }
+  }
+  @keyframes sample04 {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      opacity: 1;
+    }
+    50% {
+      -webkit-transform: translateX(20px);
+              transform: translateX(20px);
+      opacity: 0.3;
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+      opacity: 0;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .works-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .works-list li {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  #container {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
