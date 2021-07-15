@@ -77,12 +77,12 @@ h3::before {
   display: inline-block;
   width: 2em;
   height: 2em;
-  background-image: url(images/icon/dish.png);
+  background-image: url(dish.png);
   background-repeat: no-repeat;
 }
 section ul {
   list-style: inside;
-  list-style-image: url(images/icon/arrow.png);
+  list-style-image: url(arrow.png);
 }
 section a {
   padding: 0;
@@ -157,7 +157,7 @@ article a::before {
   display: inline-block;
   width: 2em;
   height: 2em;
-  background-image: url(images/icon/arrow.png);
+  background-image: url(arrow.png);
   background-repeat: no-repeat;
 }
 .article-3 {
