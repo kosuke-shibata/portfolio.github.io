@@ -98,8 +98,8 @@ main {
     }
   }
 
-  #works {
-    .works-service {
+  #works-service {
+    .works-service-title {
       &.fade-in {
         @include animation(
           $name: sample02,
@@ -146,9 +146,40 @@ main {
         }
       }
   }
+  #contact {
+    .contact-title {
+      &.fade-in {
+        @include animation(
+          $name: sample02,
+        );
+      }
+    }
+    p {
+      margin-bottom: 50px;
+    }
+    & dl {
+      letter-spacing: 3px;
+      line-height: 60px;
+      text-align: center;
+      dt {
+        font-size: 25px;
+        color: #000;
+        float: left;
+        margin-left: 200px;
+      }
+      dd {
+        margin-left: 200px;
+        a {
+          color: #57595B;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
 
 footer {
+  clear: both;
   text-align: right;
   ul {
     list-style: none;
