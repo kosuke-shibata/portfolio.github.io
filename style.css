@@ -248,7 +248,6 @@ main #contact dl dd {
 }
 
 main #contact dl dd a {
-  color: #57595B;
   text-decoration: none;
 }
 
@@ -551,6 +550,10 @@ footer ul li a:hover {
   }
   main #contact dl dt {
     margin-left: 10px;
+  }
+  main #contact dl dd {
+    margin-left: 0;
+    letter-spacing: 2px;
   }
   @-webkit-keyframes sample03 {
     0% {
