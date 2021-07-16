@@ -113,7 +113,7 @@ main #about.fade-in .career {
   line-height: 30px;
 }
 
-main #works .works-service.fade-in {
+main #works-service .works-service-title.fade-in {
   -webkit-animation-name: sample02;
           animation-name: sample02;
   -webkit-animation-duration: 2s;
@@ -130,7 +130,7 @@ main #works .works-service.fade-in {
           animation-fill-mode: forwards;
 }
 
-main #works .works-list {
+main #works-service .works-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,14 +141,14 @@ main #works .works-list {
   margin-bottom: 100px;
 }
 
-main #works .works-list li {
+main #works-service .works-list li {
   opacity: 0;
   width: 30%;
   height: auto;
   list-style: none;
 }
 
-main #works .works-list li.fade-in-line.works-list-1 {
+main #works-service .works-list li.fade-in-line.works-list-1 {
   -webkit-animation-name: sample01;
           animation-name: sample01;
   -webkit-animation-duration: 2s;
@@ -165,7 +165,7 @@ main #works .works-list li.fade-in-line.works-list-1 {
           animation-fill-mode: forwards;
 }
 
-main #works .works-list li.fade-in-line.works-list-2 {
+main #works-service .works-list li.fade-in-line.works-list-2 {
   -webkit-animation-name: sample01;
           animation-name: sample01;
   -webkit-animation-duration: 2s;
@@ -182,7 +182,7 @@ main #works .works-list li.fade-in-line.works-list-2 {
           animation-fill-mode: forwards;
 }
 
-main #works .works-list li.fade-in-line.works-list-3 {
+main #works-service .works-list li.fade-in-line.works-list-3 {
   -webkit-animation-name: sample01;
           animation-name: sample01;
   -webkit-animation-duration: 2s;
@@ -199,17 +199,61 @@ main #works .works-list li.fade-in-line.works-list-3 {
           animation-fill-mode: forwards;
 }
 
-main #works .works-list li img {
+main #works-service .works-list li img {
   width: 100%;
 }
 
-main #works .works-list li p {
+main #works-service .works-list li p {
   margin: 0;
   padding-top: 10px;
   line-height: 30px;
 }
 
+main #contact .contact-title.fade-in {
+  -webkit-animation-name: sample02;
+          animation-name: sample02;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+main #contact p {
+  margin-bottom: 50px;
+}
+
+main #contact dl {
+  letter-spacing: 3px;
+  line-height: 60px;
+  text-align: center;
+}
+
+main #contact dl dt {
+  font-size: 25px;
+  color: #000;
+  float: left;
+  margin-left: 200px;
+}
+
+main #contact dl dd {
+  margin-left: 200px;
+}
+
+main #contact dl dd a {
+  color: #57595B;
+  text-decoration: none;
+}
+
 footer {
+  clear: both;
   text-align: right;
 }
 
@@ -444,7 +488,7 @@ footer ul li a:hover {
     margin: 0;
     line-height: 35px;
   }
-  main #works .works-list {
+  main #works-service .works-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -453,11 +497,11 @@ footer ul li a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main #works .works-list li {
+  main #works-service .works-list li {
     margin: 0 auto 100px;
     width: 80%;
   }
-  main #works .works-list li.fade-in-line.works-list-1 {
+  main #works-service .works-list li.fade-in-line.works-list-1 {
     -webkit-animation-name: sample01;
             animation-name: sample01;
     -webkit-animation-duration: 2s;
@@ -473,7 +517,7 @@ footer ul li a:hover {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  main #works .works-list li.fade-in-line.works-list-2 {
+  main #works-service .works-list li.fade-in-line.works-list-2 {
     -webkit-animation-name: sample01;
             animation-name: sample01;
     -webkit-animation-duration: 2s;
@@ -489,7 +533,7 @@ footer ul li a:hover {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  main #works .works-list li.fade-in-line.works-list-3 {
+  main #works-service .works-list li.fade-in-line.works-list-3 {
     -webkit-animation-name: sample01;
             animation-name: sample01;
     -webkit-animation-duration: 2s;
@@ -504,6 +548,9 @@ footer ul li a:hover {
             animation-direction: normal;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
+  }
+  main #contact dl dt {
+    margin-left: 10px;
   }
   @-webkit-keyframes sample03 {
     0% {
