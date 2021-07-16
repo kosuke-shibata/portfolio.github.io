@@ -129,7 +129,7 @@ main {
     }
   }
   
-  #works {
+  #works-service {
     .works-list {
       display: flex;
       flex-direction: column;
@@ -154,6 +154,17 @@ main {
             );
           }
         }
+      }
+    }
+  }
+  #contact {
+    dl {
+      dt {
+        margin-left: 10px;
+      }
+      dd {
+        margin-left: 0;
+        letter-spacing: 2px;
       }
     }
   }
