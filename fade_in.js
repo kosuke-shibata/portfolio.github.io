@@ -1,5 +1,7 @@
 const about = document.querySelector('#about');
-const works = document.querySelector('.works-service');
+const works = document.querySelector('.works-service-title');
+const contact = document.querySelector('.contact-title');
+
 const worksLi1 = document.querySelector('.works-list-1');
 const worksLi2 = document.querySelector('.works-list-2');
 const worksLi3 = document.querySelector('.works-list-3');
@@ -24,6 +26,7 @@ const cb2 = function(entrise, observer) {
 const io = new IntersectionObserver(cb);
 io.observe(about);
 io.observe(works);
+io.observe(contact);
 
 const inter = new IntersectionObserver(cb2);
 inter.observe(worksLi1);
