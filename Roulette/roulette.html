@@ -82,8 +82,8 @@
 <body>
   <main></main>
   <section id="container">
-    <button class="btn" id="start" tabindex="-1" onclick="this.disabled = true;">スタート</button>
-    <button class="btn" id="stop" tabindex="-1" onclick="getElementById('start').disabled = false">ストップ</button>
+    <button class="btn" id="start" tabindex="-1" onclick="this.disabled = true,getElementById('reset').disabled = true;">スタート</button>
+    <button class="btn" id="stop" tabindex="-1" onclick="getElementById('start').disabled = false,getElementById('reset').disabled = false;">ストップ</button>
     <button class="btn" id="reset" tabindex="-1">リセット</button>
   </section>
 </body>
