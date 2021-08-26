@@ -139,11 +139,18 @@ main #works-service .works-list {
           justify-content: space-between;
   padding: 0 20px;
   margin-bottom: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 main #works-service .works-list li {
   opacity: 0;
-  width: 20%;
+  margin-bottom: 30px;
+  width: 30%;
   height: auto;
   list-style: none;
 }
@@ -655,14 +662,6 @@ footer ul li a:hover {
 }
 
 @media (max-width: 800px) {
-  .works-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
   .works-list li {
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
