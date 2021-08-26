@@ -199,6 +199,23 @@ main #works-service .works-list li.fade-in-line.works-list-3 {
           animation-fill-mode: forwards;
 }
 
+main #works-service .works-list li.fade-in-line.works-list-4 {
+  -webkit-animation-name: sample01;
+          animation-name: sample01;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 main #works-service .works-list li img {
   width: 100%;
 }
@@ -529,6 +546,22 @@ footer ul li a:hover {
             animation-fill-mode: forwards;
   }
   main #works-service .works-list li.fade-in-line.works-list-3 {
+    -webkit-animation-name: sample01;
+            animation-name: sample01;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  main #works-service .works-list li.fade-in-line.works-list-4 {
     -webkit-animation-name: sample01;
             animation-name: sample01;
     -webkit-animation-duration: 2s;
