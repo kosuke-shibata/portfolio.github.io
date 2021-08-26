@@ -5,6 +5,7 @@ const contact = document.querySelector('.contact-title');
 const worksLi1 = document.querySelector('.works-list-1');
 const worksLi2 = document.querySelector('.works-list-2');
 const worksLi3 = document.querySelector('.works-list-3');
+const worksLi4 = document.querySelector('.works-list-4');
 
 const cb = function(entrise, observer) {
   entrise.forEach(entry => {
@@ -32,3 +33,4 @@ const inter = new IntersectionObserver(cb2);
 inter.observe(worksLi1);
 inter.observe(worksLi2);
 inter.observe(worksLi3);
+inter.observe(worksLi4);
