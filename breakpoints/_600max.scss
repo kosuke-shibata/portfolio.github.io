@@ -38,7 +38,7 @@ header {
       @include animation(
       $name: sample04,
       $duration: 0.3s,
-    );
+      );
       left: 100px;
       display: flex;
       flex-flow: column;
@@ -154,6 +154,11 @@ main {
             );
           }
           &.works-list-4 {
+            @include animation(
+              $name: sample01,
+            );
+          }
+          &.works-list-5 {
             @include animation(
               $name: sample01,
             );
