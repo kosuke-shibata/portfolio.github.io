@@ -125,19 +125,25 @@ main {
             &.works-list-2 {
               @include animation(
               $name: sample01,
-              $delay: 0.5s,
+              $delay: 0.3s,
               );
             }
             &.works-list-3 {
               @include animation(
               $name: sample01,
-              $delay: 1s,
+              $delay: 0.6s,
               );
             }
             &.works-list-4 {
               @include animation(
                 $name: sample01,
-                $delay: 1.5s,
+                $delay: 0.9s,
+              );
+            }
+            &.works-list-5 {
+              @include animation(
+                $name: sample01,
+                $delay: 1.2s,
               );
             }
           }
