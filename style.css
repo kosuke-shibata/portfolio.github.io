@@ -179,8 +179,8 @@ main #works-service .works-list li.fade-in-line.works-list-2 {
           animation-duration: 2s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
@@ -196,8 +196,8 @@ main #works-service .works-list li.fade-in-line.works-list-3 {
           animation-duration: 2s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
@@ -213,8 +213,25 @@ main #works-service .works-list li.fade-in-line.works-list-4 {
           animation-duration: 2s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+main #works-service .works-list li.fade-in-line.works-list-5 {
+  -webkit-animation-name: sample01;
+          animation-name: sample01;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
@@ -569,6 +586,22 @@ footer ul li a:hover {
             animation-fill-mode: forwards;
   }
   main #works-service .works-list li.fade-in-line.works-list-4 {
+    -webkit-animation-name: sample01;
+            animation-name: sample01;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  main #works-service .works-list li.fade-in-line.works-list-5 {
     -webkit-animation-name: sample01;
             animation-name: sample01;
     -webkit-animation-duration: 2s;
