@@ -146,6 +146,12 @@ main {
                 $delay: 1.2s,
               );
             }
+            &.works-list-6 {
+              @include animation(
+                $name: sample01,
+                $delay: 1.5s,
+              );
+            }
           }
           width: 30%;
           height: auto;
