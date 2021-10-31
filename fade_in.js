@@ -7,6 +7,7 @@ const worksLi2 = document.querySelector('.works-list-2');
 const worksLi3 = document.querySelector('.works-list-3');
 const worksLi4 = document.querySelector('.works-list-4');
 const worksLi5 = document.querySelector('.works-list-5');
+const worksLi6 = document.querySelector('.works-list-6');
 
 const cb = function(entrise, observer) {
   entrise.forEach(entry => {
@@ -36,3 +37,4 @@ inter.observe(worksLi2);
 inter.observe(worksLi3);
 inter.observe(worksLi4);
 inter.observe(worksLi5);
+inter.observe(worksLi6);
