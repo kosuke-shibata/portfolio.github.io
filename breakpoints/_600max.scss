@@ -163,6 +163,11 @@ main {
               $name: sample01,
             );
           }
+          &.works-list-6 {
+            @include animation(
+              $name: sample01,
+            );
+          }
         }
       }
     }
