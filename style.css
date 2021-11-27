@@ -736,6 +736,9 @@ body footer small {
 }
 
 @media (max-width: 650px) {
+  h2 {
+    font-size: 6vw;
+  }
   h2::after {
     width: 70%;
   }
@@ -781,11 +784,12 @@ body footer small {
     margin-top: 0;
     padding: 0;
   }
-  body header .menu-command .nav a {
+  body header .menu-command .nav li a {
     color: #fff;
     line-height: 50px;
     padding-right: 30px;
     font-weight: normal;
+    font-size: 4vw;
   }
   body header .menu-open .menu-button > span:nth-child(1) {
     -webkit-transform: translateY(14px) rotate(135deg);
@@ -828,6 +832,10 @@ body footer small {
   body main #about .about-message .self-intro dl {
     padding-top: 30px;
     line-height: 30px;
+    font-size: 3vw;
+  }
+  body main #about .about-message .career {
+    font-size: 3vw;
   }
   body main #works {
     margin-top: 100px;
@@ -835,14 +843,27 @@ body footer small {
   body main #works .works-message .works-mes .works-img {
     padding-top: 30px;
   }
+  body main #works .works-message .works-mes .works-text h3 {
+    font-size: 5vw;
+  }
+  body main #works .works-message .works-mes .works-text h4 {
+    font-size: 4vw;
+  }
   body main #works .works-message .works-mes .works-text dl {
     line-height: 24px;
+    font-size: 3vw;
   }
   body main #works .works-message .works-mes .works-text dl dt {
     margin-left: 30px;
   }
   body main #works .works-message .works-mes .works-text dl dd {
     margin-left: 150px;
+  }
+  body main #works .works-message .works-mes .works-text ul {
+    font-size: 3vw;
+  }
+  body main #works .works-message .works-mes .works-text .others {
+    font-size: 3vw;
   }
   body main #contact {
     margin-top: 70px;
@@ -855,6 +876,9 @@ body footer small {
   }
   body footer ul li {
     padding-left: 30px;
+  }
+  body footer ul li a {
+    font-size: 4vw;
   }
   body footer small {
     display: block;
@@ -890,6 +914,15 @@ body footer small {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+  }
+  #works-detail .works-list .work .work-message h3 {
+    font-size: 5vw;
+  }
+  #works-detail .works-list .work .work-message h4 {
+    font-size: 4vw;
+  }
+  #works-detail .works-list .work .work-message dl {
+    font-size: 3vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
