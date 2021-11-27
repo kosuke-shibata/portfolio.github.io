@@ -1,0 +1,127 @@
+body {
+  header {
+    height: 100px;
+    h1 {
+      a {
+        img {
+          height: 100px;
+        }
+      }
+    }
+    .menu-command {
+      margin-top: 60px;
+      margin-right: 30px;
+    }
+  }
+  main {
+    margin-top: 100px;
+    #about {
+      padding-top: 150px;
+      .about-message {
+        .self-intro {
+          text-align: center;
+          img {
+            float: none;
+            width: 50%;
+            padding-left: 0;
+          }
+          dl {
+            font-size: 2vw;
+            dt {
+              margin-left: 10%;
+            }
+            dd {
+              margin-left: 40%;
+              text-align: left;
+            }
+          }
+        }
+        .career {
+          width: 80%;
+          font-size: 2vw;
+          padding-left: 0;
+          margin: 0 auto;
+          li {
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+    #works {
+      .works-message {
+        padding-bottom: 50px;
+        .works-mes {
+          display: block;
+          .works-img {
+            float: none;
+            padding-left: 0;
+            width: 100%;
+            padding-bottom: 0;
+            .site-img1 {
+              display: none;
+            }
+            .site-img2 {
+              display: block;
+              margin: 0 auto;
+              width: 50%;
+            }
+          }
+          .works-text {
+            width: 70%;
+            padding: 50px 0 0;
+            margin: 0 auto;
+            h3 {
+              font-size: 2.5vw;
+              padding-bottom: 20px;
+            }
+            h4 {
+              font-size: 2vw;
+              .site-url {
+                font-size: 1.5vw;
+              }
+            }
+            dl {
+              font-size: 1.5vw;
+            }
+            ul {
+              font-size: 1.5vw;
+            }
+            .others {
+              margin-top: 0;
+              font-size: 1.5vw;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    small {
+      padding-right: 100px;
+    }
+  }
+}
+
+#works-detail {
+  .works-list {
+    .work {
+      .work-message {
+        h3 {
+          font-size: 2vw;
+        }
+        h4 {
+          font-size: 1.5vw;
+        }
+        dl {
+          font-size: 1.3vw;
+          dt {
+            margin-left: 10px;
+          }
+          dd {
+            margin-left: 100px;
+          }
+        }
+      }
+    }
+  }
+}
