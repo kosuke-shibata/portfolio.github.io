@@ -932,6 +932,9 @@ body footer small {
   body main #works .works-message .works-mes .works-text h4 {
     font-size: 4vw;
   }
+  body main #works .works-message .works-mes .works-text h4 .site-url {
+    font-size: 3vw;
+  }
   body main #works .works-message .works-mes .works-text dl {
     line-height: 24px;
     font-size: 3vw;
