@@ -52,7 +52,7 @@ h2.slide-in:after {
 body {
   background: #d3fcff;
   overflow-x: hidden;
-  color: #3a3a3a;
+  color: #141414;
 }
 
 body header {
@@ -424,8 +424,8 @@ body main #works .works-message .works-mes .works-text .others::before {
   content: "";
   display: block;
   position: absolute;
-  top: 50%;
-  right: -15%;
+  top: 8px;
+  right: -60px;
   width: 40px;
   height: 2px;
   background: #000;
@@ -437,8 +437,8 @@ body main #works .works-message .works-mes .works-text .others::after {
   content: "";
   display: block;
   position: absolute;
-  top: 28%;
-  right: -15%;
+  top: 4px;
+  right: -60px;
   width: 8px;
   height: 8px;
   border: none;
@@ -451,16 +451,16 @@ body main #works .works-message .works-mes .works-text .others::after {
 }
 
 body main #works .works-message .works-mes .works-text .others:hover {
-  right: 10%;
+  right: 15%;
 }
 
 body main #works .works-message .works-mes .works-text .others:hover::before {
-  right: -17%;
+  right: -70px;
   width: 50px;
 }
 
 body main #works .works-message .works-mes .works-text .others:hover::after {
-  right: -17%;
+  right: -70px;
 }
 
 body main #contact {
@@ -949,14 +949,15 @@ body footer small {
     font-size: 3vw;
   }
   body main #works .works-message .works-mes .works-text .others::before {
-    right: -15%;
+    top: 8px;
+    right: -50px;
   }
   body main #works .works-message .works-mes .works-text .others::after {
-    top: 36%;
-    right: -15%;
+    top: 4px;
+    right: -50px;
   }
   body main #works .works-message .works-mes .works-text .others:hover::before {
-    width: 40px;
+    width: 50px;
   }
   body main #contact .contact-message {
     text-align: center;
