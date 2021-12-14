@@ -6,6 +6,10 @@ h2 {
 }
 
 body {
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-appearance: none;
+  -webkit-text-size-adjust: 100%;
   header {
     height: 75px;
     h1 {
@@ -96,6 +100,9 @@ body {
       padding: 100px 0;
       .about-message {
         .self-intro {
+          img {
+            margin-left: 0;
+          }
           dl {
             padding-top: 30px;
             line-height: 30px;
