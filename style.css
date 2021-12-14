@@ -156,6 +156,7 @@ body main .wave-contaner {
   margin-top: -150px;
   -webkit-animation: wave-move 10s linear 0s infinite;
           animation: wave-move 10s linear 0s infinite;
+  overflow-x: hidden;
 }
 
 body main .wave-contaner .wavy-line-upper {
