@@ -144,15 +144,16 @@ body {
             .others {
               font-size: 3vw;
               &::before {
-                right: -15%;
+                top: 8px;
+                right: -50px;
               }
               &::after {
-                top: 36%;
-                right: -15%;
+                top: 4px;
+                right: -50px;
               }
               &:hover {
                 &::before {
-                  width: 40px;
+                  width: 50px;
                 }
               }
             }
