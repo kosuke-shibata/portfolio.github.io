@@ -12,6 +12,7 @@ h2 {
   padding-left: 50px;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+  color: #3a3a3a;
 }
 
 h2::after {
@@ -51,6 +52,7 @@ h2.slide-in:after {
 body {
   background: #d3fcff;
   overflow-x: hidden;
+  color: #3a3a3a;
 }
 
 body header {
@@ -61,7 +63,7 @@ body header {
   display: flex;
   width: 100%;
   height: 150px;
-  background: #18EBF9;
+  background: #75ece6;
   border-bottom: 1px solid #000;
   z-index: 10;
 }
@@ -97,7 +99,7 @@ body header .menu-command .nav {
 
 body header .menu-command .nav li {
   width: 150px;
-  border-right: 2px solid #fff;
+  border-right: 2px solid #fffff0;
 }
 
 body header .menu-command .nav li:last-child {
@@ -105,7 +107,7 @@ body header .menu-command .nav li:last-child {
 }
 
 body header .menu-command .nav li a {
-  color: #fff;
+  color: #fffff0;
   text-decoration: none;
   border-bottom: 0px;
   position: relative;
@@ -119,7 +121,7 @@ body header .menu-command .nav li a::after {
   left: 0;
   width: 100%;
   height: 1px;
-  background: #fff;
+  background: #fffff0;
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
   -webkit-transform-origin: left top;
@@ -185,7 +187,7 @@ body main .wave-contaner .wavy-line-upper div {
           box-sizing: border-box;
   /* ボーダーを内側にする */
   border-bottom: 0;
-  background: #18EBF9;
+  background: #75ece6;
 }
 
 body main .wave-contaner .wavy-line-downer {
@@ -200,7 +202,7 @@ body main .wave-contaner .wavy-line-downer {
   /* 下段の位置調整、微調整必須 */
   overflow: hidden;
   /* はみ出す部分を非表示にする */
-  background: #18EBF9;
+  background: #75ece6;
 }
 
 body main .wave-contaner .wavy-line-downer div {
@@ -224,14 +226,14 @@ body main #about {
   width: 100%;
   background-image: url(images/background1.png);
   background-size: cover;
-  padding-top: 200px;
+  padding: 200px 0;
 }
 
 body main #about .about-message {
   width: 80%;
   height: 80%;
   margin: 0 auto;
-  background: #fff;
+  background: #fffff0;
   border-radius: 20px;
 }
 
@@ -243,8 +245,8 @@ body main #about .about-message .self-intro {
 
 body main #about .about-message .self-intro img {
   float: left;
-  padding-top: 30px;
-  padding-left: 50px;
+  margin-top: 30px;
+  margin-left: 50px;
 }
 
 body main #about .about-message .self-intro dl {
@@ -318,14 +320,17 @@ body main #about.about-in .about-message .career {
 
 body main #works {
   width: 100%;
-  margin: 200px auto 0;
+  margin: 0 auto;
+  background-image: url(images/background2.png);
+  background-size: cover;
+  padding-bottom: 200px;
 }
 
 body main #works .works-message {
   width: 80%;
   margin: 0 auto;
   border-radius: 20px;
-  background: #fff;
+  background: #fffff0;
 }
 
 body main #works .works-message .works-mes {
@@ -372,6 +377,7 @@ body main #works .works-message .works-mes .works-text h4 {
 
 body main #works .works-message .works-mes .works-text h4 .site-url {
   font-size: 1vw;
+  color: #3a3a3a;
 }
 
 body main #works .works-message .works-mes .works-text dl {
@@ -401,17 +407,75 @@ body main #works .works-message .works-mes .works-text ul li {
 
 body main #works .works-message .works-mes .works-text .others {
   display: block;
+  position: relative;
   text-align: right;
+  right: 30%;
   margin-top: 100px;
   font-size: 1vw;
+  font-weight: bold;
+  color: #3a3a3a;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main #works .works-message .works-mes .works-text .others::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -15%;
+  width: 40px;
+  height: 2px;
+  background: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main #works .works-message .works-mes .works-text .others::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 28%;
+  right: -15%;
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main #works .works-message .works-mes .works-text .others:hover {
+  right: 10%;
+}
+
+body main #works .works-message .works-mes .works-text .others:hover::before {
+  right: -17%;
+  width: 50px;
+}
+
+body main #works .works-message .works-mes .works-text .others:hover::after {
+  right: -17%;
 }
 
 body main #contact {
-  width: 80%;
-  margin: 100px auto auto;
+  width: 100%;
+  margin: 0 auto;
+  background: #5a9e9a;
 }
 
-body main #contact iframe {
+body main #contact .contact-message {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+  background: #fffff0;
+}
+
+body main #contact .contact-message iframe {
   width: 100%;
   height: 850px;
 }
@@ -423,7 +487,9 @@ body footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 50px 0;
+  padding: 50px 0;
+  background: #5a9e9a;
+  color: #000;
 }
 
 body footer ul {
@@ -610,6 +676,10 @@ body footer small {
   font-size: 1.3vw;
 }
 
+#works-detail .works-list .work .work-message h4 a {
+  color: #3a3a3a;
+}
+
 #works-detail .works-list .work .work-message dl {
   font-size: 1vw;
   letter-spacing: 3px;
@@ -760,7 +830,7 @@ body footer small {
     cursor: pointer;
   }
   body header .menu-command .menu-button > span {
-    background: white;
+    background: #fff;
     width: 40px;
     height: 4px;
     display: block;
@@ -783,6 +853,9 @@ body footer small {
             flex-flow: column;
     margin-top: 0;
     padding: 0;
+  }
+  body header .menu-command .nav li {
+    background: #75ece6;
   }
   body header .menu-command .nav li a {
     color: #fff;
@@ -827,7 +900,7 @@ body footer small {
     margin-top: 75px;
   }
   body main #about {
-    padding-top: 50px;
+    padding: 100px 0;
   }
   body main #about .about-message .self-intro dl {
     padding-top: 30px;
@@ -838,7 +911,7 @@ body footer small {
     font-size: 3vw;
   }
   body main #works {
-    margin-top: 100px;
+    padding-bottom: 100px;
   }
   body main #works .works-message .works-mes .works-img {
     padding-top: 30px;
@@ -865,8 +938,25 @@ body footer small {
   body main #works .works-message .works-mes .works-text .others {
     font-size: 3vw;
   }
-  body main #contact {
-    margin-top: 70px;
+  body main #works .works-message .works-mes .works-text .others::before {
+    right: -15%;
+  }
+  body main #works .works-message .works-mes .works-text .others::after {
+    top: 36%;
+    right: -15%;
+  }
+  body main #works .works-message .works-mes .works-text .others:hover::before {
+    width: 40px;
+  }
+  body main #contact .contact-message {
+    text-align: center;
+  }
+  body main #contact .contact-message h2 {
+    text-align: left;
+  }
+  body main #contact .contact-message iframe {
+    width: 90%;
+    height: 1100px;
   }
   body footer {
     display: block;
