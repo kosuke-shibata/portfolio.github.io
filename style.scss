@@ -10,6 +10,7 @@ h2 {
   padding-top: 30px;
   padding-left: 50px;
   transform: translateX(-100%);
+  color: #3a3a3a;
   &::after {
     content: '';
     position: absolute;
@@ -35,13 +36,14 @@ h2 {
 body {
   background: #d3fcff;
   overflow-x: hidden;
+  color: #3a3a3a;
   header {
     top: 0;
     position: fixed;
     display: flex;
     width: 100%;
     height: 150px;
-    background: #18EBF9;
+    background: #75ece6;
     border-bottom: 1px solid #000;
     z-index: 10;
     h1 {
@@ -66,12 +68,12 @@ body {
         text-align: center;
         li {
           width: 150px;
-          border-right: 2px solid #fff;
+          border-right: 2px solid #fffff0;
           &:last-child {
             border-right: none;
           }
           a {
-            color: #fff;
+            color: #fffff0;
             text-decoration: none;
             border-bottom: 0px;
             position: relative;
@@ -83,7 +85,7 @@ body {
               left: 0;
               width: 100%;
               height: 1px;
-              background: #fff;
+              background: #fffff0;
               transform: scale(0, 1);
               transform-origin: left top;
               transition: transform .3s;
@@ -100,7 +102,7 @@ body {
     margin-top: 150px;
     .main-photo {
       width: 70%;
-      margin: 0 auto 100px;;
+      margin: 0 auto 100px;
       img {
         width: 100%;
         vertical-align: middle;
@@ -127,7 +129,7 @@ body {
           border-radius: 100% 100% 0 0;
           box-sizing: border-box; /* ボーダーを内側にする */
           border-bottom: 0;
-          background: #18EBF9;
+          background: #75ece6;
         }
       }
       .wavy-line-downer {
@@ -136,7 +138,7 @@ body {
         display: flex;
         margin-left: -25px; /* 下段の位置調整、微調整必須 */
         overflow: hidden; /* はみ出す部分を非表示にする */
-        background: #18EBF9;
+        background: #75ece6;
         div {
           width: var(--wave-w);
           min-width: var(--wave-w);
@@ -155,20 +157,20 @@ body {
       width: 100%;
       background-image: url(images/background1.png);
       background-size: cover;
-      padding-top: 200px;
+      padding: 200px 0;
       .about-message {
         width: 80%;
         height: 80%;
         margin: 0 auto;
-        background: #fff;
+        background: #fffff0;
         border-radius: 20px;
         .self-intro {
           transform: translate(-100%, 100%) scale(0,0);
           font-weight: bold;
           img {
             float: left;
-            padding-top: 30px;
-            padding-left: 50px;
+            margin-top: 30px;
+            margin-left: 50px;
           }
           dl {
             font-size: 1.5vw;
@@ -220,12 +222,15 @@ body {
     }
     #works {
       width: 100%;
-      margin: 200px auto 0;
+      margin: 0 auto;
+      background-image: url(images/background2.png);
+      background-size: cover;
+      padding-bottom: 200px;
       .works-message {
         width: 80%;
         margin: 0 auto;
         border-radius: 20px;
-        background: #fff;
+        background: #fffff0;
         .works-mes {
           display: flex;
           justify-content: space-between;
@@ -255,6 +260,7 @@ body {
               padding-bottom: 20px;
               .site-url {
                 font-size: 1vw;
+                color: #3a3a3a;
               }
             }
             dl {
@@ -279,27 +285,77 @@ body {
             }
             .others {
               display: block;
+              position: relative;
               text-align: right;
+              right: 30%;
               margin-top: 100px;
               font-size: 1vw;
+              font-weight: bold;
+              color: #3a3a3a;
+              text-decoration: none;
+              transition: 0.3s;
+              &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: -15%;
+                width: 40px;
+                height: 2px;
+                background: #000;
+                transition: 0.3s;
+              }
+              &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 28%;
+                right: -15%;
+                width: 8px;
+                height: 8px;
+                border: none;
+                border-left: 2px solid;
+                border-bottom: 2px solid;
+                transform: rotate(-135deg);
+                transition: 0.3s;
+              }
+              &:hover {
+                right: 10%;
+                &::before {
+                  right: -17%;
+                  width: 50px;  
+                }
+                &::after {
+                  right: -17%;
+                }
+              }
             }
           }
         }
       }
     }
     #contact {
-      width: 80%;
-      margin: 100px auto auto;
-      iframe {
-        width: 100%;
-        height: 850px;
-      }
+      width: 100%;
+      margin: 0 auto;
+      background: #5a9e9a;
+      .contact-message {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background: #fffff0;
+        iframe {
+          width: 100%;
+          height: 850px;
+        }
+        }
     }
   }
   footer {
     display: flex;
     justify-content: space-between;
-    margin: 50px 0;
+    padding: 50px 0;
+    background: #5a9e9a;
+    color: #000;
     ul {
       display: flex;
       list-style: none;
@@ -385,6 +441,9 @@ body {
         }
         h4 {
           font-size: 1.3vw;
+          a {
+            color: #3a3a3a;
+          }
         }
         dl {
           font-size: 1vw;
