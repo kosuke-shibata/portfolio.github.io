@@ -112,6 +112,7 @@ body {
       width: 120%;
       margin-top: -150px;
       animation: wave-move 10s linear 0s infinite;
+      overflow-x: hidden;
       .wavy-line-upper {
         --wave-w: 200px; /* 波の大きさ */
         --wave-h: 100px; /* 波の大きさ */
