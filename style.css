@@ -812,6 +812,12 @@ body footer small {
   h2::after {
     width: 70%;
   }
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-appearance: none;
+    -webkit-text-size-adjust: 100%;
+  }
   body header {
     height: 75px;
   }
@@ -901,6 +907,9 @@ body footer small {
   }
   body main #about {
     padding: 100px 0;
+  }
+  body main #about .about-message .self-intro img {
+    margin-left: 0;
   }
   body main #about .about-message .self-intro dl {
     padding-top: 30px;
