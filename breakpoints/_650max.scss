@@ -96,6 +96,10 @@ body {
   }
   main {
     margin-top: 75px;
+    .wave-contaner {
+      width: 100%;
+      animation: none;
+    }
     #about {
       padding: 100px 0;
       .about-message {
