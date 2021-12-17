@@ -906,6 +906,11 @@ body footer small {
   body main {
     margin-top: 75px;
   }
+  body main .wave-contaner {
+    width: 100%;
+    -webkit-animation: none;
+            animation: none;
+  }
   body main #about {
     padding: 100px 0;
   }
