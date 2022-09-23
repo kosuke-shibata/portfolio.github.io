@@ -2,13 +2,13 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0",viewport-fit="cover">
   <link rel="stylesheet" href="style.css">
-  <title>柴田光祐のポートフォリオ</title>
+  <title>こーすけのポートフォリオ</title>
 </head>
 <body>
   <header>
-    <h1><a href="index.html" class="main-title"><img src="images/main-title.png" alt=""></a></h1>
+    <h1><a href="index.html" class="main-title"><img src="images/main-title2.png" alt=""></a></h1>
     <div class="menu-command">
       <button class="menu-button">
         <span></span>
@@ -17,15 +17,13 @@
       </button>
       <ul class="nav">
         <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Service</a></li>
         <li><a href="index.html#works">Works</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-      </ul>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>  
     </div>
   </header>
   <main>
-    <div class="main-photo">
-      <img src="images/Mac.png" alt="">
-    </div>
     <div class="wave-contaner">
       <div class="wavy-line-upper">
         <div></div><div></div><div></div><div></div><div></div>
@@ -38,73 +36,75 @@
       <div class="about-message">
         <h2>About</h2>
         <div class="self-intro">
-          <img src="images/IMG_4582.png" alt="">
+          <img src="images/ieWSO0aJZTIbLMY1662977788_1662977889.jpg" alt="">
           <dl>
             <dt>名前: </dt>
-            <dd>柴田光祐</dd>
+            <dd>こーすけ</dd>
             <dt>年齢: </dt>
-            <dd>21歳</dd>
+            <dd>22歳</dd>
             <dt>出身: </dt>
             <dd>秋田県</dd>
             <dt>所在地: </dt>
-            <dd>山口県　下関市</dd>
-            <dt>勉強した言語: </dt>
-            <dd>HTML、CSS、JavaScript、PHP</dd>
+            <dd>山口県</dd>
+            <dt>独学: </dt>
+            <dd>HTML、CSS、JavaScript、PHP、WordPress</dd>
           </dl>
         </div>
         <ul class="career">
-          <li>2019年、大学進学のために山口県下関市に引っ越す </li>
-          <li>大学では水産学について学ぶが,水産業の未来性を不安に感じるようになる </li>
+          <li>2019年、大学進学のために山口県に引っ越す </li>
+          <li>大学では水産学について学ぶが、水産業の未来性を不安に感じるようになる </li>
           <li>2021年、Web制作という仕事を友達に紹介してもらい、クリエイティブな仕事に興味を持つ </li>
-          <li>現在、動画教材、プログラミングスクールでWeb制作の技術を学ぶ </li>
+          <li>現在、大学の勉強と並行し、副業に挑戦中 </li>
         </div>
       </div>
     </section>
-    <section id="works">
+    <section id="services" style="background-image: url(images/background1.png);">
+      <div class="services-message">
+        <h2 class="services-title">Service</h2>
+        <ul class="services-list">
+          <li class="service">
+            <h3>デザイン</h3>
+            <img src="images/pencil.png" alt="">
+            <p>お客様の頭の中にあるイメージを擦り合わせ、より良いデザインを作成します。特に「利便性」に焦点を合わせ、サイトを訪れた人が操作に迷わないようなデザインを心がけます。</p>
+          </li>
+          <li class="service">
+            <h3>コーディング</h3>
+            <img src="images/pc.png" alt="">
+            <p>HTML・CSSを使用した静的なサイト、Javascriptを使用した動的なサイト、スマートフォンを意識したレスポンシブなサイトなど、要望に合わせたコーディングを行い、操作性に優れたサイトを作成します。</p>
+          </li>
+          <li class="service">
+            <h3>WordPress導入</h3>
+            <img src="images/enterkey.png" alt="">
+            <p>HTMLで作成したサイトをWordPress化します。また、拡張機能を使用し、お問い合わせフォームの作成、サイト表示の高速化など、サイトの利便性を追求します。</p>
+          </li>
+        </ul> 
+      </div>
+    </section>
+    <section id="works" style="background-image: url(images/background2.png);">
       <div class="works-message">
         <h2 class="works-title">Works</h2>
-        <div class="works-mes">
-          <div class="works-img"><a href="https://kosuke-shibata.github.io/Onsen-hotel-site.github.io/" target="_blank">
-            <img src="images/Onsen-hotel-site.png" alt="" class="site-img1"><img src="images/Onsen-hotel-site2.png" alt="" class="site-img2"></a>
-          </div>
-          <div class="works-text">
-            <h3>架空温泉旅館サイト</h3>
-            <h4>制作期間</h4>
-            <dl>
-              <dt>企画</dt>
-              <dd>約3時間</dd>
-              <dt>デザイン</dt>
-              <dd>約8時間</dd>
-              <dt>コーディング</dt>
-              <dd>約30時間</dd>
-            </dl>
-            <h4>URL: <a href="https://kosuke-shibata.github.io/Onsen-hotel-site.github.io/" class="site-url" target="_blank">https://kosuke-shibata.github.io/Onsen-hotel-site.github.io/</a></h4>
-            <h4>制作する際に気をつけたこと</h4>
-            <ul>
-              <li>予約を分かりやすくするために、目印となる吹き出しをCSSで作成。<br>より目立つようにhover時に動きをつける。</li>
-              <li>代表からの挨拶文を書くことで、サイトの中身に人間味を出す。<br>サイトに暖かさを加える。</li>
-              <li>のどかさを演出するために色彩は暖色系を使用する。</li>
-              <li>当館案内の画像を4秒ごとに移り変わるようにして、注目させやすくする。</li>
-            </ul>
-            <a href="works.html" class="others">その他の制作物はこちらから</a>
-          </div>
-        </div>
+        <ul class="works-list">
+          <li class="work">
+            <a href="TandF.html" target="_blank"><img src="images/nac2.png
+              " alt=""></a>
+          </li>
+          <li class="work">
+            <a href="onsen.html" target="_blank"><img src="images/Onsen-hotel-site2.png" alt=""></a>
+          </li>
+          <li class="work">
+            <a href="cosmetic.html" target="_blank"><img src="images/cosmetic-site.png" alt=""></a>
+          </li>
+        </ul>
       </div>
     </section>
-    <section id="contact">
-      <div class="contact-message">
-        <h2 class="contact-title">Contact</h2>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdUEm91dpSNZlJAy6U8H0Szz5rW2KS4YgPhZKSpru5nJcCZ_A/viewform?embedded=true" width="1200" height="1000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
-      </div>
-    </section>
-  </main>
   <footer>
     <ul>
       <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#services">Service</a></li>
       <li><a href="index.html#works">Works</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-    <small>Copyright 2021 KosukeShibata</small>
+    <small>Copyright 2022 KosukeShibata</small>
   </footer>
   <script src="jquery-3.6.0.min.js"></script>
   <script src="slide_in.js"></script>
