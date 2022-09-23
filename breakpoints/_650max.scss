@@ -7,7 +7,6 @@ h2 {
 
 body {
   width: 100%;
-  overflow-x: hidden;
   -webkit-appearance: none;
   -webkit-text-size-adjust: 100%;
   header {
@@ -97,8 +96,7 @@ body {
   main {
     margin-top: 75px;
     .wave-contaner {
-      width: 100%;
-      animation: none;
+      margin-top: 100px;
     }
     #about {
       padding: 100px 0;
@@ -106,10 +104,11 @@ body {
         .self-intro {
           img {
             margin-left: 0;
+            width: 60%;
           }
           dl {
             padding-top: 30px;
-            line-height: 30px;
+            line-height: 5vh;
             font-size: 3vw;
           }
         }
@@ -118,65 +117,94 @@ body {
         }
       }
     }
+
+    #services {
+      .services-message {
+        .services-list {
+          .service {
+            width: 80%;
+            h3 {
+              font-size: 6vw;
+            }
+            p {
+              font-size: 3vw;
+            }
+          }
+        }
+      }
+    }
+
     #works {
       padding-bottom: 100px;
       .works-message {
-        .works-mes {
-          .works-img {
-            padding-top: 30px;
+        .works-list {
+          flex-direction: column;
+          padding: 0;
+          margin-bottom: 0;
+          .work {
+            width: 60%;
+            margin: 50px auto;
           }
-          .works-text {
-            h3 {
-              font-size: 5vw;
-            }
-            h4 {
-              font-size: 4vw;
-              .site-url {
-                font-size: 3vw;
-              }
-            }
-            dl {
-              line-height: 24px;
-              font-size: 3vw;
-              dt {
-                margin-left: 30px;
-              }
-              dd {
-                margin-left: 150px;
-              }
-            }
-            ul {
+        }
+      }
+    }
+
+    #works-detail {
+      .works-list-title {
+        padding-top: 50px;
+      }
+      .works-mes {
+        .works-img {
+          padding-top: 30px;
+        }
+        .works-text {
+          h3 {
+            font-size: 5vw;
+          }
+          h4 {
+            font-size: 4vw;
+            .site-url {
               font-size: 3vw;
             }
-            .others {
-              font-size: 3vw;
+          }
+          dl {
+            line-height: 24px;
+            font-size: 3vw;
+            dt {
+              margin-left: 30px;
+            }
+            dd {
+              margin-left: 150px;
+            }
+          }
+          ul {
+            font-size: 3vw;
+          }
+          .others {
+            font-size: 3vw;
+            &::before {
+              top: 8px;
+              right: -50px;
+            }
+            &::after {
+              top: 4px;
+              right: -50px;
+            }
+            &:hover {
               &::before {
-                top: 8px;
-                right: -50px;
-              }
-              &::after {
-                top: 4px;
-                right: -50px;
-              }
-              &:hover {
-                &::before {
-                  width: 50px;
-                }
+                width: 50px;
               }
             }
           }
         }
       }
     }
+    
     #contact {
       .contact-message {
-        text-align: center;
-        h2 {
-          text-align: left;
-        }
+        width: 90%;
         iframe {
-          width: 90%;
-          height: 1100px;
+          height: 1200px;
         }
       }
     }
@@ -209,28 +237,3 @@ body {
   }
 }
 
-#works-detail {
-  .works-list-title {
-    padding-top: 50px;
-  }
-  .works-list {
-    flex-direction: column;
-    padding: 0;
-    .work {
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      .work-message {
-        h3 {
-          font-size: 5vw;
-        }
-        h4 {
-          font-size: 4vw;
-        }
-        dl {
-          font-size: 3vw;
-        }
-      }
-    }
-  }
-}
