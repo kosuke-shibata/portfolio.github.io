@@ -15,6 +15,9 @@ body {
   }
   main {
     margin-top: 100px;
+    .wave-contaner {
+      margin-top: 300px;
+    }
     #about {
       padding-top: 150px;
       .about-message {
@@ -22,7 +25,8 @@ body {
           text-align: center;
           img {
             float: none;
-            width: 50%;
+            width: 40%;
+            margin-top: 50px;
             padding-left: 0;
           }
           dl {
@@ -47,49 +51,76 @@ body {
         }
       }
     }
+
+    #services {
+      .services-message {
+        .services-list {
+          flex-wrap: wrap;
+          .service {
+            width: 50%;
+            h3 {
+              font-size: 2.5vw;
+            }
+            p {
+              font-size: 1.5vw;
+            }
+          }
+        }
+      }
+    }
+
     #works {
       .works-message {
         padding-bottom: 50px;
-        .works-mes {
-          display: block;
-          .works-img {
-            float: none;
-            padding-left: 0;
-            width: 100%;
-            padding-bottom: 0;
-            .site-img1 {
-              display: none;
-            }
-            .site-img2 {
-              display: block;
-              margin: 0 auto;
-              width: 50%;
+        .works-list {
+          flex-wrap: wrap;
+          .work {
+            width: 40%;
+          }
+        }
+      }
+    }
+
+    #works-detail {
+      .works-mes {
+        display: block;
+        .works-img {
+          float: none;
+          padding-left: 0;
+          width: 100%;
+          padding-bottom: 0;
+          .site-img1 {
+            display: none;
+          }
+          .site-img2 {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+          }
+        }
+        .works-text {
+          width: 70%;
+          padding: 50px 0 0;
+          margin: 0 auto;
+          h3 {
+            font-size: 2.5vw;
+            padding-bottom: 20px;
+          }
+          h4 {
+            font-size: 2vw;
+            .site-url {
+              font-size: 1.5vw;
             }
           }
-          .works-text {
-            width: 70%;
-            padding: 50px 0 0;
-            margin: 0 auto;
-            h3 {
-              font-size: 2.5vw;
-              padding-bottom: 20px;
-            }
-            h4 {
-              font-size: 2vw;
-              .site-url {
-                font-size: 1.5vw;
-              }
-            }
-            dl {
-              font-size: 1.5vw;
-            }
-            ul {
-              font-size: 1.5vw;
-            }
-            .others {
-              margin-top: 0;
-              font-size: 1.5vw;
-            }
+          dl {
+            font-size: 1.5vw;
+          }
+          ul {
+            font-size: 1.5vw;
+          }
+          .others {
+            margin-top: 0;
+            font-size: 1.5vw;
           }
         }
       }
@@ -97,31 +128,7 @@ body {
   }
   footer {
     small {
-      padding-right: 100px;
-    }
-  }
-}
-
-#works-detail {
-  .works-list {
-    .work {
-      .work-message {
-        h3 {
-          font-size: 2vw;
-        }
-        h4 {
-          font-size: 1.5vw;
-        }
-        dl {
-          font-size: 1.3vw;
-          dt {
-            margin-left: 10px;
-          }
-          dd {
-            margin-left: 100px;
-          }
-        }
-      }
+      padding-right: 50px;
     }
   }
 }
